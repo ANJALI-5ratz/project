@@ -21,7 +21,9 @@
       z-index: 10;
     }
 
-    header h1 {
+    header h1,
+    .site-title {
+      font-size: 2em;
       font-weight: 600;
     }
 
@@ -48,6 +50,7 @@
       padding: 20px;
     }
 
+    .hero h1,
     .hero h2 {
       font-size: 48px;
       margin-bottom: 15px;
@@ -151,6 +154,7 @@
       section {
         padding: 50px 20px;
       }
+      .hero h1,
       .hero h2 {
         font-size: 36px;
     }
@@ -196,10 +200,10 @@ input, select {
   padding: 10px;
   margin: 10px 0;
 }
-*{contact-info {  
+.contact-info {
   background: #f4f4f4;
   margin-top: 20px;
   background-attachment: scroll;
   background-size: cover;
   padding: 20px;                                                                                                                                                    
-}}
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://project-bice-sigma.vercel.app/sitemap.xml

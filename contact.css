@@ -41,6 +41,7 @@ body {
 .contact-info {
   flex: 1;
   min-width: 280px;
+  font-style: normal;
 }
 
 .contact-info h2,

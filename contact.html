@@ -1,77 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Contact Us | GreenBite</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact GreenBite | Restaurant in Chennai</title>
+  <meta name="description" content="Contact or visit GreenBite in Chennai, view opening hours and place an order enquiry for fresh bowls, salads and smoothies.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://project-bice-sigma.vercel.app/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GreenBite">
+  <meta property="og:title" content="Contact GreenBite | Restaurant in Chennai">
+  <meta property="og:description" content="Contact or visit GreenBite in Chennai, view opening hours and place an order enquiry for fresh bowls, salads and smoothies.">
+  <meta property="og:url" content="https://project-bice-sigma.vercel.app/contact.html">
+  <meta property="og:image" content="https://project-bice-sigma.vercel.app/mainimage.jpg">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact GreenBite | Restaurant in Chennai">
+  <meta name="twitter:description" content="Contact or visit GreenBite in Chennai, view opening hours and place an order enquiry for fresh bowls, salads and smoothies.">
+  <meta name="twitter:image" content="https://project-bice-sigma.vercel.app/mainimage.jpg">
   <link rel="icon" href="Brown and White SImple Modern Professional Catering Logo (1).png" type="image/png">
-  <link rel="stylesheet" href="contact.css">
-<script src="contact.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+  <script src="contact.js" defer></script>
 </head>
 <body>
 
-  <section class="contact-hero">
-    <div class="hero-text">
-      <h1>Get in Touch</h1>
-      <p>We’d love to hear from you. Let’s talk food 🌱</p>
-    </div>
-  </section>
-
-  <section class="contact-section">
-    <div class="contact-container">
-
-      <div class="contact-info">
-        <h2>Visit Us</h2>
-        <p>
-          GreenBite Restaurant<br>
-          City of Culture, Chennai<br>
-          Tamil Nadu, India
-        </p>
-
-        <h3>Opening Hours</h3>
-        <p>
-          Monday – Friday: 10:00 AM – 10:00 PM<br>
-          Saturday – Sunday: 9:00 AM – 11:00 PM
-        </p>
-
-        <h3>Contact</h3>
-        
-         <a href="tel:+919876543210">📞 +91 98765 43210</a><br>
-         <a href="mailto:hello@greenbite.com">✉️ hello@greenbite.com</a>  
+  <main>
+    <section class="contact-hero">
+      <div class="hero-text">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you. Let's talk food 🌱</p>
       </div>
+    </section>
 
-      <div class="contact-form">
-        <h2>place your order</h2>
+    <section class="contact-section">
+      <div class="contact-container">
 
-        <form onsubmit="return validateOrder();">
-          <input type="text" id="name" placeholder="Your Name" required>
-          <input type="email" id="email" placeholder="Your Email" required>
-          <input type="text" id="phone" placeholder="Your Phone Number" required>
-          <select id="order" required>
-  <option value="">Select Your Order</option>
-  <option>Smoothie</option>
-  <option>berryblast</option>
-  <option>harvest salad</option>
-  <option>protein wrap</option>
-  <option>ceasor</option>
-  <option>honey cake</option>
-  <option>lime mousse cake</option>
-  <option>green bowl</option>
-</select>
-          <button type="submit">Request Order</button>
-        </form>
+        <address class="contact-info">
+          <h2>Visit Us</h2>
+          <p>
+            GreenBite Restaurant<br>
+            City of Culture, Chennai<br>
+            Tamil Nadu, India
+          </p>
+
+          <h3>Opening Hours</h3>
+          <p>
+            Monday – Friday: 10:00 AM – 10:00 PM<br>
+            Saturday – Sunday: 9:00 AM – 11:00 PM
+          </p>
+
+          <h3>Contact</h3>
+
+          <a href="tel:+919876543210">📞 +91 98765 43210</a><br>
+          <a href="mailto:hello@greenbite.com">✉️ hello@greenbite.com</a>
+        </address>
+
+        <div class="contact-form">
+          <h2>Place Your Order</h2>
+
+          <form onsubmit="return validateOrder();">
+            <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" autocomplete="tel" required>
+            <select id="order" name="order" required>
+              <option value="">Select Your Order</option>
+              <option>Smoothie</option>
+              <option>Berry Blast Smoothie</option>
+              <option>Harvest Salad</option>
+              <option>Power Protein Bowl</option>
+              <option>Classic Caesar</option>
+              <option>Honeycomb Cheesecake</option>
+              <option>Lime Mousse Cheesecake</option>
+              <option>Green Goddess Bowl</option>
+            </select>
+            <button type="submit">Request Order</button>
+          </form>
+        </div>
+
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <section class="map-section">
-    <h2>Find Us Here</h2>
-    <iframe
-      src="https://www.google.com/maps?q=chennai&output=embed"
-      allowfullscreen=""
-      loading="lazy">
-    </iframe>
-  </section>
+    <section class="map-section">
+      <h2>Find Us Here</h2>
+      <iframe
+        src="https://www.google.com/maps?q=chennai&output=embed"
+        title="Map showing GreenBite location in Chennai"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </section>
+  </main>
 
   <footer>
     <p>© 2026 GreenBite • Eat Clean. Live Green 🌱</p>

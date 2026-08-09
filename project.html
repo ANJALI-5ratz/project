@@ -2,79 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>GreenBite | Fresh & Healthy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <title>GreenBite | Fresh Food Restaurant Preview</title>
+  <meta name="description" content="Preview GreenBite's fresh food concept, including healthy meals inspired by nature and crafted with care.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://project-bice-sigma.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GreenBite">
+  <meta property="og:title" content="GreenBite | Fresh Food Restaurant Preview">
+  <meta property="og:description" content="Preview GreenBite's fresh food concept, including healthy meals inspired by nature and crafted with care.">
+  <meta property="og:url" content="https://project-bice-sigma.vercel.app/project.html">
+  <meta property="og:image" content="https://project-bice-sigma.vercel.app/mainimage.jpg">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GreenBite | Fresh Food Restaurant Preview">
+  <meta name="twitter:description" content="Preview GreenBite's fresh food concept, including healthy meals inspired by nature and crafted with care.">
+  <meta name="twitter:image" content="https://project-bice-sigma.vercel.app/mainimage.jpg">
+  <link rel="icon" href="Brown and White SImple Modern Professional Catering Logo (1).png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
   <header>
-    <h1>GreenBite</h1>
-    <nav>
+    <p class="site-title">GreenBite</p>
+    <nav aria-label="Preview page navigation">
       <a href="#about">About</a>
       <a href="#menu">Menu</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Fresh Food, Real Ingredients</h2>
-      <p>Healthy meals inspired by nature and crafted with care.</p>
-      <a href="#menu" class="btn">Explore Menu</a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <h3>Our Philosophy</h3>
-    <p>
-      At GreenBite, we serve clean, seasonal, and sustainable food,
-      inspired by the Sweetgreen concept of healthy living.
-    </p>
-  </section>
-
-  <!-- MENU -->
-  <section class="section" id="menu">
-    <h3>Popular Dishes</h3>
-
-    <div class="menu">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
-        <h4>Harvest Bowl</h4>
-        <p>Quinoa, roasted veggies & avocado.</p>
-        <button onclick="orderFood('Harvest Bowl')">Order Now</button>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Fresh Food, Real Ingredients</h1>
+        <p>Healthy meals inspired by nature and crafted with care.</p>
+        <a href="#menu" class="btn">Explore Menu</a>
       </div>
+    </section>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
-        <h4>Green Salad</h4>
-        <p>Fresh greens with citrus dressing.</p>
-        <button onclick="orderFood('Green Salad')">Order Now</button>
+    <section class="section" id="about">
+      <h2>Our Philosophy</h2>
+      <p>
+        At GreenBite, we serve clean, seasonal, and sustainable food,
+        inspired by the Sweetgreen concept of healthy living.
+      </p>
+    </section>
+
+    <section class="section" id="menu">
+      <h2>Popular Dishes</h2>
+
+      <div class="menu">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" alt="Harvest Bowl with quinoa, roasted vegetables and avocado" loading="lazy">
+          <h3>Harvest Bowl</h3>
+          <p>Quinoa, roasted veggies &amp; avocado.</p>
+          <button onclick="orderFood('Harvest Bowl')">Order Now</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1" alt="Green salad with fresh greens and citrus dressing" loading="lazy">
+          <h3>Green Salad</h3>
+          <p>Fresh greens with citrus dressing.</p>
+          <button onclick="orderFood('Green Salad')">Order Now</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Protein bowl with grilled chicken, rice and vegetables" loading="lazy">
+          <h3>Protein Bowl</h3>
+          <p>Grilled chicken, rice &amp; vegetables.</p>
+          <button onclick="orderFood('Protein Bowl')">Order Now</button>
+        </div>
       </div>
+    </section>
+  </main>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
-        <h4>Protein Bowl</h4>
-        <p>Grilled chicken, rice & vegetables.</p>
-        <button onclick="orderFood('Protein Bowl')">Order Now</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer id="contact">
     <p>© 2026 GreenBite Restaurant | Eat Clean. Live Green.</p>
   </footer>
 
-  <!-- JAVASCRIPT -->
   <script>
     function orderFood(item) {
       alert("You ordered: " + item + " 🥗");

@@ -1,5 +1,5 @@
-
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
 function addToCart(itemName, price) {
   const existingItem = cart.find(item => item.name === itemName);
 
@@ -18,6 +18,7 @@ function addToCart(itemName, price) {
   alert(`${itemName} added to cart 🛒`);
   updateCartCount();
 }
+
 function updateCartCount() {
   const cartCount = document.getElementById("cart-count");
   if (!cartCount) return;
@@ -25,13 +26,15 @@ function updateCartCount() {
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   cartCount.innerText = totalItems;
 }
+
 function goToPage(page) {
   window.location.href = page;
 }
 
 function goToCart() {
-  window.location.href = "cart.html";
+  window.location.href = "contact.html";
 }
+
 function displayCartItems() {
   const cartContainer = document.getElementById("cart-items");
   const totalElement = document.getElementById("total-price");
@@ -53,14 +56,18 @@ function displayCartItems() {
     `;
   });
 
-  totalElement.innerText = `Total: ₹${total}`;
+  if (totalElement) {
+    totalElement.innerText = `Total: ₹${total}`;
+  }
 }
+
 function removeItem(index) {
   cart.splice(index, 1);
   localStorage.setItem("cart", JSON.stringify(cart));
   displayCartItems();
   updateCartCount();
 }
+
 function placeOrder() {
   if (cart.length === 0) {
     alert("Your cart is empty 🛑");
@@ -78,15 +85,17 @@ function placeOrder() {
     window.location.href = "index.html";
   }, 1500);
 }
+
 function submitContactForm(event) {
   event.preventDefault();
 
-  alert("Thank you for contacting GreenBite 🌱\nWe’ll get back to you soon!");
+  alert("Thank you for contacting GreenBite 🌱\nWe'll get back to you soon!");
 
   setTimeout(() => {
     window.location.href = "index.html";
   }, 1500);
 }
+
 window.onload = () => {
   updateCartCount();
   displayCartItems();
