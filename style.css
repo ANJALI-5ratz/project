@@ -89,6 +89,77 @@
       color: #2e7d32;
     }
 
+    .home-intro,
+    .home-faq {
+      background: #ffffff;
+    }
+
+    .home-copy {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .home-copy h2,
+    .home-faq h2 {
+      font-size: 36px;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    .home-copy h3 {
+      color: #1b5e20;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    .home-copy p {
+      line-height: 1.7;
+      margin-bottom: 16px;
+      color: #555;
+    }
+
+    .text-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .text-links a,
+    .home-copy a {
+      color: #2e7d32;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .text-links a:hover,
+    .home-copy a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+    }
+
+    .highlight-card {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .highlight-card h3 {
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+
+    .highlight-card p {
+      color: #555;
+      line-height: 1.6;
+    }
+
     .menu {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -157,7 +228,12 @@
       .hero h1,
       .hero h2 {
         font-size: 36px;
-    }
+      }
+
+      .home-copy h2,
+      .home-faq h2 {
+        font-size: 30px;
+      }
   }
 * {
   font-family: 'Poppins', sans-serif;

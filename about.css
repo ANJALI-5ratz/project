@@ -60,6 +60,29 @@ body {
   color: #2e7d32;
 }
 
+.about-text p {
+  margin-bottom: 16px;
+}
+
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.about-links a,
+.experience-text a {
+  color: #2e7d32;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.about-links a:hover,
+.experience-text a:hover {
+  text-decoration: underline;
+}
+
 .about-image img {
   width: 100%;
   max-width: 450px;
@@ -137,5 +160,9 @@ footer {
   .philosophy,
   .experience {
     padding: 50px 20px;
+  }
+
+  .about-text h2 {
+    font-size: 30px;
   }
 }

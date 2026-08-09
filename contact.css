@@ -55,6 +55,23 @@ body {
   color: #555;
 }
 
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.contact-links a {
+  color: #2e7d32;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
 .contact-form {
   flex: 1;
   min-width: 280px;
@@ -105,6 +122,12 @@ body {
 .map-section h2 {
   margin-bottom: 25px;
   color: #2e7d32;
+}
+
+.map-intro {
+  max-width: 760px;
+  margin: 0 auto 25px;
+  color: #555;
 }
 
 .map-section iframe {

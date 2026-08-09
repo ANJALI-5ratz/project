@@ -31,6 +31,53 @@ body {
   padding: 60px;
 }
 
+.menu-intro,
+.menu-cta {
+  max-width: 850px;
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  margin-bottom: 50px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.menu-intro h2,
+.menu-cta h2 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.menu-intro p,
+.menu-cta p,
+.menu-note {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.menu-note {
+  max-width: 850px;
+  margin-top: -18px;
+  margin-bottom: 30px;
+}
+
+.menu-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.menu-links a {
+  color: #2e7d32;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu-links a:hover {
+  text-decoration: underline;
+}
+
 .category-title {
   font-size: 30px;
   margin-bottom: 30px;
@@ -94,5 +141,10 @@ footer {
 @media (max-width: 768px) {
   .menu-section {
     padding: 30px 20px;
+  }
+
+  .menu-intro,
+  .menu-cta {
+    padding: 25px;
   }
 }

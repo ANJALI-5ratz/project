@@ -82,7 +82,7 @@ function placeOrder() {
   updateCartCount();
 
   setTimeout(() => {
-    window.location.href = "index.html";
+    window.location.href = "/";
   }, 1500);
 }
 
@@ -92,7 +92,7 @@ function submitContactForm(event) {
   alert("Thank you for contacting GreenBite 🌱\nWe'll get back to you soon!");
 
   setTimeout(() => {
-    window.location.href = "index.html";
+    window.location.href = "/";
   }, 1500);
 }
 
