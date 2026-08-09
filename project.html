@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenBite | Fresh & Healthy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <h1>GreenBite</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Fresh Food, Real Ingredients</h2>
+      <p>Healthy meals inspired by nature and crafted with care.</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h3>Our Philosophy</h3>
+    <p>
+      At GreenBite, we serve clean, seasonal, and sustainable food,
+      inspired by the Sweetgreen concept of healthy living.
+    </p>
+  </section>
+
+  <!-- MENU -->
+  <section class="section" id="menu">
+    <h3>Popular Dishes</h3>
+
+    <div class="menu">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
+        <h4>Harvest Bowl</h4>
+        <p>Quinoa, roasted veggies & avocado.</p>
+        <button onclick="orderFood('Harvest Bowl')">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
+        <h4>Green Salad</h4>
+        <p>Fresh greens with citrus dressing.</p>
+        <button onclick="orderFood('Green Salad')">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+        <h4>Protein Bowl</h4>
+        <p>Grilled chicken, rice & vegetables.</p>
+        <button onclick="orderFood('Protein Bowl')">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <p>© 2026 GreenBite Restaurant | Eat Clean. Live Green.</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function orderFood(item) {
+      alert("You ordered: " + item + " 🥗");
+    }
+  </script>
+
+</body>
+</html>

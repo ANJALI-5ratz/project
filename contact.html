@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us | GreenBite</title>
+  <link rel="icon" href="Brown and White SImple Modern Professional Catering Logo (1).png" type="image/png">
+  <link rel="stylesheet" href="contact.css">
+<script src="contact.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <section class="contact-hero">
+    <div class="hero-text">
+      <h1>Get in Touch</h1>
+      <p>We’d love to hear from you. Let’s talk food 🌱</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+
+      <div class="contact-info">
+        <h2>Visit Us</h2>
+        <p>
+          GreenBite Restaurant<br>
+          City of Culture, Chennai<br>
+          Tamil Nadu, India
+        </p>
+
+        <h3>Opening Hours</h3>
+        <p>
+          Monday – Friday: 10:00 AM – 10:00 PM<br>
+          Saturday – Sunday: 9:00 AM – 11:00 PM
+        </p>
+
+        <h3>Contact</h3>
+        
+         <a href="tel:+919876543210">📞 +91 98765 43210</a><br>
+         <a href="mailto:hello@greenbite.com">✉️ hello@greenbite.com</a>  
+      </div>
+
+      <div class="contact-form">
+        <h2>place your order</h2>
+
+        <form onsubmit="return validateOrder();">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <input type="text" id="phone" placeholder="Your Phone Number" required>
+          <select id="order" required>
+  <option value="">Select Your Order</option>
+  <option>Smoothie</option>
+  <option>berryblast</option>
+  <option>harvest salad</option>
+  <option>protein wrap</option>
+  <option>ceasor</option>
+  <option>honey cake</option>
+  <option>lime mousse cake</option>
+  <option>green bowl</option>
+</select>
+          <button type="submit">Request Order</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="map-section">
+    <h2>Find Us Here</h2>
+    <iframe
+      src="https://www.google.com/maps?q=chennai&output=embed"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>© 2026 GreenBite • Eat Clean. Live Green 🌱</p>
+  </footer>
+
+</body>
+</html>
